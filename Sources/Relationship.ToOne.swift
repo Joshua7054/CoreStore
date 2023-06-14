@@ -305,9 +305,6 @@ extension RelationshipContainer {
 
 // MARK: - Operations
 
-infix operator .= : AssignmentPrecedence
-infix operator .== : ComparisonPrecedence
-
 extension RelationshipContainer.ToOne {
 
     /**
