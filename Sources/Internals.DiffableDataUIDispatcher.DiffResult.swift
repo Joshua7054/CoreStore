@@ -189,8 +189,6 @@ extension Internals.DiffableDataUIDispatcher {
         
         
         // MARK: Private
-        
-        @inlinable
         internal init(
             deleted: [Index] = [],
             inserted: [Index] = [],
@@ -223,8 +221,7 @@ extension Internals.DiffableDataUIDispatcher {
             
             @usableFromInline
             internal var isTracked = false
-            
-            @inlinable
+
             init() {}
         }
         
@@ -251,10 +248,8 @@ extension Internals.DiffableDataUIDispatcher {
             
             @usableFromInline
             internal var position = 0
-            
-            @inlinable
+
             internal init(_ indices: ContiguousArray<Int>) {
-                
                 self.indices = indices
             }
             
@@ -291,10 +286,8 @@ extension Internals.DiffableDataUIDispatcher {
             
             @usableFromInline
             internal let pointer: UnsafePointer<T>
-            
-            @inlinable
+
             internal init(pointer: UnsafePointer<T>) {
-                
                 self.pointeeHashValue = pointer.pointee.hashValue
                 self.pointer = pointer
             }
