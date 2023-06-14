@@ -221,9 +221,7 @@ extension Internals {
             @usableFromInline
             var section: Int
 
-            @usableFromInline
             init(element: Int, section: Int) {
-                
                 self.element = element
                 self.section = section
             }
