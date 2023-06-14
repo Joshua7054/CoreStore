@@ -370,10 +370,6 @@ extension RelationshipContainer.ToManyOrdered: RandomAccessCollection {
 
 
 // MARK: - Operations
-
-infix operator .= : AssignmentPrecedence
-infix operator .== : ComparisonPrecedence
-
 extension RelationshipContainer.ToManyOrdered {
 
     /**
